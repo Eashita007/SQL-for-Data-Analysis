@@ -2,19 +2,43 @@
 
 This repository contains your Task 4 deliverables for practicing SQL data-analysis on the Chinook sample database.
 
-## Project Structure
-```
-SQL-for-Data-Analysis/
-├── Chinook_MySql.sql          # MySQL dump of the Chinook schema & data
-├── README.md                  # This file
-└── Screenshots of results/    # PNGs of each query’s output
-```
-## Prerequisites
+## Overview
 
-- **MySQL 8.0+** installed on your machine  
-- A MySQL user with privileges to create databases and run `SOURCE`
+In this exercise you will:
 
-## 1. Import the Chinook Database
+- Import a realistic, multi-table dataset (Chinook is a digital music store) into MySQL  
+- Explore table relationships using `SHOW TABLES` and `DESCRIBE`  
+- Filter and sort data with `SELECT`, `WHERE` and `ORDER BY`  
+- Aggregate and group results via `GROUP BY` and `SUM`  
+- Combine data from multiple tables using `JOIN`  
+- Create and query a **VIEW** to summarize customer spend  
+- Capture and document your results with screenshots
+
+## Dataset
+
+**Chinook** simulates an online music store, including:
+
+- **Customers** placing **Invoices**  
+- **Invoices** broken down into **InvoiceLine** items  
+- **Tracks**, **Albums**, **Artists**, **Genres**, and **Media Types**  
+
+This schema gives you plenty of one-to-many relationships to practice JOINs and aggregation.
+
+## Key Objectives
+
+1. **Yearly Sales**: Identify all invoices from the most recent year (2025).  
+2. **Customer Lookup**: Enrich invoices with customer names.  
+3. **Genre Performance**: Calculate total revenue per music genre.  
+4. **Customer Spender View**: Create a reusable view of total spend per customer and retrieve the top 10.
+
+## Environment
+
+- **MySQL 8.0+** running under WSL (Ubuntu)  
+- Commands executed in the interactive `mysql>` monitor  
+- Screenshots captured from the terminal and stored under `Screenshots of results/`
+
+
+## 1. Import the Chinook Database and Run in MySQL
 
 Open a terminal in this folder and run:
 
