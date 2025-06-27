@@ -3,12 +3,12 @@
 This repository contains your Task 4 deliverables for practicing SQL data-analysis on the Chinook sample database.
 
 ## Project Structure
-
+```
 SQL-for-Data-Analysis/
 ├── Chinook_MySql.sql          # MySQL dump of the Chinook schema & data
 ├── README.md                  # This file
 └── Screenshots of results/    # PNGs of each query’s output
-
+```
 ## Prerequisites
 
 - **MySQL 8.0+** installed on your machine  
@@ -19,15 +19,8 @@ SQL-for-Data-Analysis/
 Open a terminal in this folder and run:
 
 ```bash
-# Drop any old copy, create the DB, and import the schema + data
-mysql -u root -p <<EOF
-DROP DATABASE IF EXISTS Chinook;
-CREATE DATABASE Chinook;
-USE Chinook;
-SOURCE $(pwd)/Chinook_MySql.sql;
-EOF
 
-eashita@ZUNI:~/SQL-for-Data-Analysis$ mysql -u root -p
+mysql -u root -p
 Enter password: 
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 24
