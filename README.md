@@ -2,6 +2,14 @@
 
 This repository contains your Task 4 deliverables for practicing SQL data-analysis on the Chinook sample database.
 
+## Project Structure
+```
+SQL-for-Data-Analysis/
+├── Chinook_MySql.sql          # MySQL dump of the Chinook schema & data
+├── README.md                  # This file
+└── Screenshots of results/    # PNGs of each query’s output
+```
+
 ## Overview
 
 In this exercise you will:
